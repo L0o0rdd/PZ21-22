@@ -10,3 +10,5 @@ try:
         print("Сумма цифр числа: ", d1 + d2 + d3)
 except:
     print('Error')
+
+    print("Hello World")
