@@ -5,14 +5,11 @@ try:
     b = int(input("Введите число 2: "))
     c = int(input("Введите число 3: "))
 
-    if a == b and b == c:
-        print('Вы ввели 3 одинаковых числа')
-    elif a == b:
-        print("a")
+    if a == b:
+        print("3")
     elif a == c:
-        print("b")
-
+        print("2")
     else:
-        print("c")
+        print("1")
 except:
     print('Error')
