@@ -7,4 +7,4 @@ for i in range(0, len(n)-1):
     if n[i] == n[j]:
       indexes.append(i)
       indexes.append(j)
-sorted(indexes)
+print(sorted(indexes))
