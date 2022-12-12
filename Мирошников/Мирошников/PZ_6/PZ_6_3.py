@@ -6,6 +6,7 @@ import random
 n = list()
 for i in range(random.randint(3, 15)):
   n.append(random.randint(0, 100))
+print(n)
 def check(strg):
     num = input(strg)
     while type(num) != int:
