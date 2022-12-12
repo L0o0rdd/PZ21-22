@@ -1,9 +1,26 @@
-#Дано вещественное число A и целое число N (>0). Используя один цикл, найти
-# значение выражения 1 - A + A2 - A3 + ... +(-1)N AN. Условный оператор не использовать.
-a, b = int(input("Введите первое число: ")), int(input("Введите второе число: "))
-count = 0
+def check(poyas):
+    num = input(poyas)
+    while type(num) != int:
+        try:
+            return int(num)
+        except ValueError:
+            print("Введи число снова!")
+        num = input(poyas)
 
-while a > 0:
-  a-=b
-  count+=1
-print(count)
+def check_f(poyas):
+    num = input(poyas)
+    while type(num) != float:
+        try:
+            return float(num)
+        except ValueError:
+            print("Введи число снова!")
+        num = input(poyas)
+
+
+a, N = check_f(""), check("")
+res = 0
+for i in range(N+1):
+    print(i)
+    res += ((-1) ** i) * (a ** i)
+    
+print(res)
