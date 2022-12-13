@@ -11,12 +11,12 @@ def check(poyas):
 a, b, c = check("Введите число А: "), check("Введите число В: "), check("Введите число С: ")
 
 if a > 0 and b > 0 and c > 0:
-    print(1)
+    print(False)
 elif a > 0 and b > 0:
-    print(a, b)
+    print(True)
 elif a > 0 and c > 0:
     print(a, c)
 elif b > 0 and c > 0:
-    print(b, c)
+    print(True)
 else:
-    print(0)
+    print(False)
